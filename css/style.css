@@ -3,3 +3,38 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root {
+    --header: #0084FD;
+    --even-section: #9792E4;
+    --footer-bg: #333333;
+}
+.debug {
+    border: 1px solid black;
+}
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--header);
+}
+.d-flex {
+    display: flex;
+}
+.sp-between {
+    justify-content: space-between;
+}
+.items-center {
+    align-items: center;
+}
+section {
+    height: 80px;
+}
+footer {
+    background-color: var(--footer-bg);
+    height: 80px;
+}
+section:nth-child(even) {
+    background-color: var(--even-section);
+}

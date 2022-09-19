@@ -1,8 +1,10 @@
+/* reset  */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+/* colors  */
 :root {
     --header: #0084FD;
     --even-section: #9792E4;
@@ -12,11 +14,13 @@
     --text-header: white;
     --text-card: black;
 }
+/* utility  */
 .debug {
     border: 1px solid black;
+    min-height: 50px;
 }
 .container {
-    max-width: 310px;
+    max-width: 600px;
     margin: 0 auto;
 }
 .d-flex {
@@ -32,29 +36,92 @@
 html {
     font-family: 'PT Sans', sans-serif;
 }
-.main-menu {
-    list-style: none;
-    display: none;
-}
+
+/* header */
 
 header {
     background-color: var(--header);
     color: var(--text-header);
     padding: 1rem 2rem;
 }
-header div.container {
-    
+.main-menu {
+    list-style: none;
+    display: none;
 }
-section {
-    height: 80px;
+.main-menu a{
+    text-decoration: none;
+    color: var(--text-header);
 }
+.hamburger {
+    font-size: 1.5em;
+}
+
+#intro, #planning, #testimonials, #features, #about-us, #get-start {
+    padding: 0 2rem;
+}
+.card {
+    background-color: var(--bg-card);
+    color: var(--text-card);
+    margin-bottom: 1.5rem;
+}
+
+
+/* main  */
+
 section:nth-child(even) {
     background-color: var(--even-section);
 }
 
-
+/* footer  */
 
 footer {
     background-color: var(--footer-bg);
-    height: 80px;
+   
+}
+/* RESPOSIVE */
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 750px;
+    }
+    #intro .cards {
+        display: flex;
+        flex-flow: row wrap;
+        background-color: var(--last-title);
+        margin-left: -0.75rem;
+        margin-right: -0.75rem;
+    }
+    #intro .card{
+        width: calc(33.33% - 1.5rem);
+        margin: 1.5rem 0.75rem;
+    }
+    #intro .cards .card:first-child {
+        width: calc(66.66% - 1.5rem);
+    }
+    #planning .card {
+        width: 100%;
+        margin-bottom: 0;
+    }
+    #features h2 {
+        width: 100%;
+        text-align: center;
+    }
+    #features  .cards{
+        display: flex;
+        flex-flow: row wrap;
+        margin-left: -0.75rem;
+        margin-right: -0.75rem;
+    }
+    #features .card{
+        width: calc(50% - 1.5rem);
+        margin: 0.75rem 0.75rem; 
+    }
+    /* #planning div.container {
+        display: flex;
+    } */
+    /* #planning .card {
+        width: 50%;
+        height: 100%;
+        margin-bottom: 0;
+    }  */
 }

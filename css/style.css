@@ -49,6 +49,9 @@
 html {
     font-family: 'PT Sans', sans-serif;
 }
+img {
+    width: 100%;
+}
 
 /* header */
 
@@ -71,7 +74,9 @@ header {
 .z-index {
     z-index: 5;
 }
-
+section:nth-child(even) {
+    background-color: var(--even-section);
+}
 
 /* main */
 
@@ -97,6 +102,7 @@ h3 {
     color: var(--bg-header);
     margin-bottom: 2rem;
     font-size: 1.5rem;
+    font-weight: 700;
 }
 #intro .card img {
     position: relative;
@@ -115,8 +121,28 @@ h3 {
 #intro div.btn i{
     font-size: 1.2rem;
 }
-section:nth-child(even) {
+#planning  .card p{
     background-color: var(--even-section);
+    color: var(--text-header);
+}
+#planning .card {
+    background-color: var(--even-section);
+}
+#planning h3 {
+    color: var(--text-header);
+    margin-top: 1.5rem;
+    font-size: 1.7rem;
+}
+#planning .card:nth-child(2){
+    background-color: var(--text-header);
+    color: var(--text-card);
+}
+#planning .card:nth-child(2) h3{
+    color: var(--text-card);
+}
+#planning .card:nth-child(2) p{
+    background-color: var(--text-header);
+    color: var(--text-card);
 }
 
 /* footer  */
@@ -148,6 +174,7 @@ footer {
     }
     #intro .cards .card:first-child {
         width: calc(66.66% - 1.5rem);
+        height: ;
     }
     #intro .card img {
         width: 50%;

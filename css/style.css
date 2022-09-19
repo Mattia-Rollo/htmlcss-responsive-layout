@@ -20,7 +20,7 @@
     min-height: 50px;
 }
 .container {
-    max-width: 600px;
+    min-width: 200px;
     margin: 0 auto;
 }
 .d-flex {
@@ -31,6 +31,9 @@
 }
 .align-center {
     align-items: center;
+}
+.txt-center{
+    text-align: center;
 }
 
 html {
@@ -76,6 +79,7 @@ section:nth-child(even) {
 
 footer {
     background-color: var(--footer-bg);
+    padding: 0 2rem;
    
 }
 /* RESPOSIVE */
@@ -84,8 +88,11 @@ footer {
     .container {
         max-width: 750px;
     }
-    #intro .cards {
+    .cards {
         display: flex;
+    }
+    #intro .cards {
+        
         flex-flow: row wrap;
         background-color: var(--last-title);
         margin-left: -0.75rem;
@@ -98,30 +105,50 @@ footer {
     #intro .cards .card:first-child {
         width: calc(66.66% - 1.5rem);
     }
-    #planning .card {
+    
+    
+     #planning .card {
         width: 100%;
+        height: 100%;
         margin-bottom: 0;
-    }
+    } 
+    #features  .cards{
+        
+        flex-flow: row wrap;
+        margin-left: -0.75rem;
+        margin-right: -0.75rem;
+    } 
     #features h2 {
         width: 100%;
         text-align: center;
     }
-    #features  .cards{
-        display: flex;
-        flex-flow: row wrap;
-        margin-left: -0.75rem;
-        margin-right: -0.75rem;
-    }
+    
     #features .card{
         width: calc(50% - 1.5rem);
         margin: 0.75rem 0.75rem; 
     }
-    /* #planning div.container {
+    #about-us .card.left {
+        width: 60%;
+    }
+    #about-us .card.right {
+        width: 40%;
+        background-color: var(--last-title);
+    }
+    #planning .cards{
+        display: block;
+    }
+    
+}
+@media screen and (min-width: 992px) {
+    #planning .cards {
         display: flex;
-    } */
-    /* #planning .card {
-        width: 50%;
-        height: 100%;
-        margin-bottom: 0;
-    }  */
+    }
+    #planning .card {
+        width: 100%;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .container{
+        max-width: 1140px;
+    }
 }

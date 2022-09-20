@@ -63,7 +63,7 @@
     color: var(--text-card-black);
 }
 .dark-gray {
-    color: var(--dark-gray);
+    color: var(--text-card-gray);
 }
 .bottoni {
     /* display: block; */
@@ -144,6 +144,9 @@ h3 {
 #intro div.btn i{
     font-size: 1.2rem;
 }
+#intro p {
+    font-weight: 600;
+}
 
 
 #planning h3 {
@@ -200,7 +203,7 @@ h3 {
 #about-us div.image::after {
     content: '\f10d';
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 2.3rem;
     color: var(--bg-violet);
     font-family: "Font Awesome 5 free";
     display: block;
@@ -208,7 +211,9 @@ h3 {
     left: 40%;
     top: 20%;
 }
-
+#about-us p {
+    font-weight: 500;
+}
 
 
 /* footer  */

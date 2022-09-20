@@ -184,6 +184,10 @@ h3 {
     font-size: 1.8rem;
     padding: 1rem 0;
 }
+#features a.bottoni {
+    width: 70%;
+    
+}
 
 /* about us */
 
@@ -301,10 +305,14 @@ footer {
 
     #testimonials .container .card:not(.card:first-child) {
         display: flex;
+
     }
     #testimonials .card img {
         width: 200px;
         height: 200px
+    }
+    #testimonials .card .right {
+        padding: 5rem 2rem;
     }
 
                 /* features  */

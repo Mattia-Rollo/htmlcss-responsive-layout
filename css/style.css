@@ -355,14 +355,16 @@ footer {
     #planning .cards {
         display: flex;
         justify-content: center;
-        padding: 2rem;
+        padding: 0 8.3rem;
     }
     #planning .card {
         width: 100%;
+        margin: 0;
     }
     #planning .card:nth-child(2){
         width: 70%;
         align-self: flex-end;
+        margin-bottom: 3.8rem;
     }
     
     /* intro section */

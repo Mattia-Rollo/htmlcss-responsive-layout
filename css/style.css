@@ -13,7 +13,7 @@
     --last-title: #FDC15F;
     --text-header: white;
     --text-card: black;
-    --text-card-blue: #5A6E7F
+    --text-card-blue: #5A6E7F;
 }
 /* utility  */
 .debug {
@@ -37,8 +37,8 @@
     text-align: center;
 }
 .bottoni {
-    display: inline-block;
-    padding: 0.75rem 4rem;
+    display: block;
+    padding: 0.75rem 2rem;
     text-decoration: none;
     background-color: var(--bg-header);
     color: var(--text-header);
@@ -113,6 +113,7 @@ h3 {
 }
 #intro div.btn {
     letter-spacing: 0.25rem;
+    width: 15rem;
 }
 #intro .card .icon{
     font-size: 3.75rem;
@@ -144,6 +145,15 @@ h3 {
     background-color: var(--text-header);
     color: var(--text-card);
 }
+#testimonials .card:first-child {
+    background-color: var(--text-header);
+}
+#testimonials .card:first-child h3{
+    color: var(--even-section);
+}
+#testimonials .card:first-child p{
+    line-height: 2rem;
+}
 
 /* footer  */
 
@@ -174,7 +184,6 @@ footer {
     }
     #intro .cards .card:first-child {
         width: calc(66.66% - 1.5rem);
-        height: ;
     }
     #intro .card img {
         width: 50%;
@@ -217,17 +226,28 @@ footer {
 /* schermo minimo 992px */
 
 @media screen and (min-width: 992px) {
+    
+    .container{
+        max-width: 1140px;
+    }
+    
     #planning .cards {
         display: flex;
     }
     #planning .card {
         width: 100%;
     }
-    #intro .card:first-child {
+    
+    /* intro section */
+
+    #intro .cards .card:first-child {
         display: flex;
     }
+    #intro .cards .left{
+        width: 50%;
+    }
     
-    #intro .card.right {
+    #intro .right img {
         width: 50%;
     }
 }

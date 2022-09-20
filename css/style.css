@@ -62,6 +62,9 @@
 .black {
     color: var(--text-card-black);
 }
+.dark-gray {
+    color: var(--dark-gray);
+}
 .bottoni {
     display: block;
     padding: 0.75rem 2rem;
@@ -159,7 +162,7 @@ h3 {
     font-size: 2.5rem;
     line-height: 5rem;
 }
-#features * {
+#features .card * {
     display: block;
 }
 #features span.number{
@@ -172,6 +175,16 @@ h3 {
     padding: 1rem 0;
 }
 
+/* about us */
+
+#about-us .title {
+    font-size: 2.5rem;
+    display: block;
+    font-weight: 700;
+}
+#about-us img {
+    border-radius: 50%;
+}
 
 
 
@@ -202,6 +215,10 @@ footer {
     .cards {
         display: flex;
     }
+
+
+            /* intro  */
+
     #intro .cards {
         
         flex-flow: row wrap;
@@ -220,7 +237,8 @@ footer {
         width: 50%;
     }
     
-    
+            /* planning  */
+
     #planning .card {
         width: 100%;
         height: 100%;
@@ -230,12 +248,19 @@ footer {
         display: block;
     }
 
+            /* testimonials  */
+
     #testimonials .container .card:not(.card:first-child) {
         display: flex;
     }
     #testimonials .card img {
         width: 200px;
         height: 200px
+    }
+
+                /* features  */
+    #features h2 {
+        width: 100%;
     }
     #features  .cards{
         
@@ -249,6 +274,9 @@ footer {
         width: calc(50% - 1.5rem);
         margin: 0.75rem 0.75rem; 
     }
+
+            /* about-us  */
+    
     #about-us .card.left {
         width: 60%;
     }

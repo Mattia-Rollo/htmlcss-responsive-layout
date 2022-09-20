@@ -56,6 +56,12 @@
 .white {
     color: var(--text-card-white);
 }
+.violet{
+    color: var(--bg-violet);
+}
+.black {
+    color: var(--text-card-black);
+}
 .bottoni {
     display: block;
     padding: 0.75rem 2rem;
@@ -145,9 +151,25 @@ h3 {
 /* testimonials */
 #testimonials img{
     border-radius: 50%;
-    height: 50vw;
-    width: 50vw;
+    height: 200px;
+    width: 200px;
     object-fit: cover;
+}
+#features h2 {
+    font-size: 2.5rem;
+    line-height: 5rem;
+}
+#features * {
+    display: block;
+}
+#features span.number{
+    font-size: 5rem;
+    font-weight: 700;
+}
+#features span.feature {
+    font-weight: 700;
+    font-size: 1.8rem;
+    padding: 1rem 0;
 }
 
 
@@ -204,6 +226,9 @@ footer {
         height: 100%;
         margin-bottom: 0;
     } 
+    #planning .cards{
+        display: block;
+    }
 
     #testimonials .container .card:not(.card:first-child) {
         display: flex;
@@ -218,10 +243,7 @@ footer {
         margin-left: -0.75rem;
         margin-right: -0.75rem;
     } 
-    #features h2 {
-        width: 100%;
-        text-align: center;
-    }
+    
     
     #features .card{
         width: calc(50% - 1.5rem);
@@ -234,9 +256,7 @@ footer {
         width: 40%;
         background-color: var(--last-title);
     }
-    #planning .cards{
-        display: block;
-    }
+    
     
 }
 

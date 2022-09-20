@@ -312,6 +312,13 @@ footer {
         width: 40%;
         background-color: var(--last-title);
     }
+    #about-us img {
+        width: 80%;
+    }
+    #about-us div.image::after {
+        left: 50%;
+        top:15%;
+    }
     
     
 }
@@ -344,6 +351,9 @@ footer {
     }
     #intro .cards .card img {
         max-width: 100%;
+    }
+    #features .card{
+        width: calc(33.33% - 1.5rem);
     }
 }
 /* schermo minimo 1200px */

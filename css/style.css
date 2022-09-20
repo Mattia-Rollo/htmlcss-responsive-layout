@@ -367,7 +367,7 @@ footer {
         align-self: flex-end;
     }
     #intro .cards .card img {
-        max-width: 100%;
+        width: 100%;
     }
     #features .card{
         width: calc(33.33% - 1.5rem);

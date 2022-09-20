@@ -65,6 +65,9 @@
 .dark-gray {
     color: var(--text-card-gray);
 }
+.yellow {
+    color: var(--yellow);
+}
 .bottoni {
     /* display: block; */
     padding: 0.75rem 2rem;
@@ -213,6 +216,20 @@ h3 {
 }
 #about-us p {
     font-weight: 500;
+}
+
+/* get start section  */
+
+#get-start h2 {
+    font-size: 3rem;
+}
+#get-start p {
+    padding: 2rem 0;
+}
+#get-start a {
+    display: block;
+    width: 20%;
+    margin: 2rem auto;
 }
 
 
